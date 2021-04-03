@@ -4,12 +4,57 @@
   box-sizing: border-box;
 }
 
+html, body {
+  font-family: 'Roboto', sans-serif;
+}
+
 button {
   cursor: pointer;
 }
 
+.side{
+  display: block;
+  text-align: center;
+  padding: 15px 20px;
+}
+
 #logo{
-  width: 200px;
+  width: 180px;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: bold;
+  color: #06ACD3;
+  text-align: center;
+  padding: 10px 10px 0;
+}
+
+.subtitle{
+  font-size: 13px;
+  color: #91949E;
+  text-align: center;
+}
+
+li{
+  font-size: 12px;
+  padding-right: 35px;
+}
+
+li a {
+  border-top: 2px solid #06ACD3;
+}
+
+li a:active{
+  border-top: 2px solid #678DBA;
+}
+
+.text {
+  padding: 30px;
+}
+
+.text p{
+  font-size: 0.875rem;
 }
 
 .footer{
@@ -33,4 +78,26 @@ a{
 
 a img{
   width: 22px;
+}
+
+@media screen and (max-width:768px) {
+.side{
+  padding: 15px;
+}
+
+  #logo{
+    width: 130px;
+  }
+  .title, .subtitle{
+    display: none;
+  }
+
+  .text {
+    padding: 18px;
+  }
+  .text p{
+    font-size: 1rem;
+  }
+
+
 }
