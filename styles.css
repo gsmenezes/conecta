@@ -6,7 +6,28 @@
 
 html, body {
   font-family: 'Roboto', sans-serif;
+  overflow: auto;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-width: 8px;
+  scrollbar-track-color: #678DBA;
+  scrollbar-color: #45C4EF;
 }
+
+  :-webkit-scrollbar{
+    width: 8px;
+  }
+
+  :-webkit-scrollbar-thumb {
+    background-color: #a1a1a1;
+    border-radius: 6px;
+  }
+
+
+  :-webkit-scrollbar-track {
+    background-color: #1a1a1a;
+  }
+
+
 
 button {
   cursor: pointer;
@@ -78,6 +99,18 @@ a{
 
 a img{
   width: 22px;
+}
+
+.peoples{
+  padding: 30px;
+}
+
+.name{
+  font-size: 16px;
+  font-weight: bold;
+}
+.peoples p {
+  font-size: 0.875rem;
 }
 
 @media screen and (max-width:768px) {
